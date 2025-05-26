@@ -1,31 +1,77 @@
 # SPARC_TEST_001
 
-Standalone SPARC test project for validating document-based AI content generation.
+### 🧪 Mechanics-Only Prototype
+
+A structured content pipeline test to validate:
+- File input/output flow
+- Sentence extraction from PDFs
+- CSV generation inside a Docker container
+
+> This is a baseline test — no AI or LLM integration yet.
+
+---
+
+## 📁 Folder Structure
+
+SPARC_TEST_001/
+├── deep-research-agent/
+│ ├── assets/
+│ ├── context/
+│ ├── input/
+│ ├── src/
+│ ├── tests/
+│ ├── python-test-001-mechanics-only/
+│ │ ├── process/
+│ │ │ └── prototype.py
+│ │ └── output/
+│ │ └── prototype_output_50.csv
+│ ├── README.md
+│ └── SPARC_TEST_001_*.md (SPARC spec files)
+├── docker/
+│ ├── Dockerfile
+│ ├── docker-compose.yml
+│ └── requirements.txt
+└── README.md
+
+---
 
 ## 🐳 Docker Setup
 
-To build and run the container:
+### Build the container
 
 ```bash
 cd docker
 docker-compose build
+
+Run the pipeline
+bash
+Copy
+Edit
 docker-compose run sparc
-```
+This will extract text from:
 
-This launches a Python 3.12 container with all dependencies pre-installed.
+pgsql
+Copy
+Edit
+deep-research-agent/input/Breaking-Into-Tech-Companies.pdf
+And save output to:
 
-The root directory is mounted to `/app`.
+bash
+Copy
+Edit
+deep-research-agent/python-test-001-mechanics-only/output/prototype_output_50.csv
+🎯 Purpose
+This test exists to:
 
-## 📂 Docker Folder Structure
+Validate Dockerized script execution
 
-```
-docker/
-├── Dockerfile
-├── docker-compose.yml
-└── requirements.txt
-```
+Confirm pathing and input file handling
 
-## 🧠 Notes
+Extract and format hooks for future use
 
-- Runs `prototype.py` from `deep-research-agent/python-test-001-mechanics-only/process/`.
-- Output is saved to `deep-research-agent/python-test-001-mechanics-only/output/`.
+It produces 50 structured rows with:
+
+pgsql
+Copy
+Edit
+Hook → Constraint → Identity Alignment → Reversal → CTA → Critical Quote
