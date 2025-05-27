@@ -58,7 +58,7 @@ And save output to:
 deep-research-agent/python-test-001-mechanics-only/output/prototype_output_50.csv
 ```
 
-🎯 Purpose
+## 🎯 Purpose
 This test exists to:
 
 Validate Dockerized script execution
@@ -73,7 +73,7 @@ It produces 50 structured rows with:
 Hook → Constraint → Identity Alignment → Reversal → CTA → Critical Quote
 ```
 
-##📝 Notes
+## 📝 Notes
 Extracts 50 hooks from input PDFs using PyPDF2.
 Outputs are structured in Precision Messaging format.
 Part of a multi-phase pipeline for generative content testing.
