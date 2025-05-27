@@ -72,3 +72,8 @@ It produces 50 structured rows with:
 ```pgsql
 Hook → Constraint → Identity Alignment → Reversal → CTA → Critical Quote
 ```
+
+##📝 Notes
+Extracts 50 hooks from input PDFs using PyPDF2.
+Outputs are structured in Precision Messaging format.
+Part of a multi-phase pipeline for generative content testing.
